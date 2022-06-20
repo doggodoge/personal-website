@@ -1,0 +1,18 @@
+.app {
+  text-align: center;
+}
+
+.counterButton {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: green;
+  border-style: none;
+  border-radius: 0.5em;
+  box-shadow: 0.2rem 0.2rem 0 darkgreen;
+  transition: 100ms;
+}
+
+.counterButton:active {
+  transform: translateY(0.2rem);
+}
