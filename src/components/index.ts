@@ -1,4 +1,5 @@
 import Social from './Social';
 import CodeBlock from './CodeBlock';
+import ToolTip from './ToolTip'
 
-export { Social, CodeBlock };
+export { Social, CodeBlock, ToolTip };

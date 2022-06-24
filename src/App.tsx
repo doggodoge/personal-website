@@ -31,7 +31,7 @@ const App: Component = () => {
       <Header />
       <h2>Placeholder, stuff to come!</h2>
       <p>I will eventually put something here. I swear!</p>
-      <p>For now play with this counter:</p>
+      <p>For now play with this <em>counter</em>:</p>
       <div
         style={{
           display: 'flex',
@@ -41,8 +41,10 @@ const App: Component = () => {
         }}
       >
         <Counter />
+
+        <h2>Code Block Test</h2>
         <CodeBlock>
-          {"// this is a comment\nconsole.log('Hi!')"}
+          {"// this is a comment\nconsole.log('Hi!')\n\n/* Just a Simple Code Block Test */"}
         </CodeBlock>
       </div>
     </div>

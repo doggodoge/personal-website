@@ -1,0 +1,8 @@
+.container {
+    padding: 0.3rem;
+    font-size: smaller;
+    color: white;
+    background-color: tomato;
+    border-radius: 0.2em;
+    box-shadow: 0.2em 0.2em 0 rgb(184, 70, 50);
+}

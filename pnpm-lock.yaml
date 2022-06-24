@@ -1,15 +1,19 @@
 lockfileVersion: 5.4
 
 specifiers:
+  prettier: ^2.7.1
   solid-js: ^1.4.2
+  solid-transition-group: ^0.0.10
   typescript: ^4.6.4
   vite: ^2.9.9
   vite-plugin-solid: ^2.2.6
 
 dependencies:
   solid-js: 1.4.2
+  solid-transition-group: 0.0.10_solid-js@1.4.2
 
 devDependencies:
+  prettier: 2.7.1
   typescript: 4.6.4
   vite: 2.9.9
   vite-plugin-solid: 2.2.6
@@ -761,6 +765,12 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
     hasBin: true
@@ -800,6 +810,14 @@ packages:
       '@babel/types': 7.17.0
       solid-js: 1.4.2
     dev: true
+
+  /solid-transition-group/0.0.10_solid-js@1.4.2:
+    resolution: {integrity: sha512-b3O9z6BUP60CG1WnTdqFuvHms0reDNYwQF+eAEEaSaoDEmiOu9+Lu7zQgWGySJjaAdSAClhmFCmx/eAjQgfIoA==}
+    peerDependencies:
+      solid-js: ^1.0.0
+    dependencies:
+      solid-js: 1.4.2
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}

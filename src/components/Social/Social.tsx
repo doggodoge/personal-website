@@ -9,16 +9,16 @@ interface SocialProps {
 
 const Social: Component<SocialProps> = ({ github, linkedin, email }) => {
   return (
-    <div class={style.socialContainer}>
-      <Show when={github}>
+    <div class={style.container}>
+      {github && (
         <a class={style.socialItem} href={github}>GitHub</a>
-      </Show>
-      <Show when={email}>
-        <a class={style.socialItem} href={`mailto:${email}`}>Email</a>
-      </Show>
-      <Show when={linkedin}>
+      )}
+      {linkedin && (
         <a class={style.socialItem} href={linkedin}>LinkedIn</a>
-      </Show>
+      )}
+      {email && (
+        <a class={style.socialItem} href={`mailto:${email}`}>Email</a>
+      )}
     </div>
   )
 }
