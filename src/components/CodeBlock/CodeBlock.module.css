@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Recursive', monospace;
+  font-variation-settings: var(--font-variation-monospace);
+  padding: 1rem 0rem 1rem 1rem;
+  border-style: none;
+  border-radius: 1em;
+  color: white;
+  background-color: tomato;
+  box-shadow: 0.2em 0.2em 0 rgb(184, 70, 50);
+}
+
+.codeText {
+  padding-right: 1rem;
+  white-space: pre;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.copyButton {
+  font-size: larger;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 0.3em;
+  transition: 100ms;
+}
+
+.copyButton:hover {
+  background-color: rgb(184, 70, 50);
+}

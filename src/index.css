@@ -1,13 +1,30 @@
+:root {
+  --font-fallback: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-variation-monospace: 'MONO' 1, 'CASL' 1, 'wght' 400, 'slnt' 0, 'CRSV' 0.5;
+  --font-variation-body: 'MONO' 0, 'CASL' 0, 'wght' 400, 'slnt' 0, 'CRSV' 0.5;
+  --font-variation-heading: 'MONO' 0, 'CASL' 0.6, 'wght' 700, 'slnt' -5, 'CRSV' 0.5;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Recursive', var(--font-fallback);
+  font-variation-settings: var(--font-variation-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-variation-settings: var(--font-variation-heading);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Recursive', monospace;
+  font-weight: 400;
+  font-variation-settings: var(--font-variation-monospace)
 }
