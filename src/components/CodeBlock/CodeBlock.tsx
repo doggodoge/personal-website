@@ -27,7 +27,9 @@ const CodeBlock: Component<CodeBlockProps> = ({ children }: CodeBlockProps) => {
   return (
     <div class={style.container}>
       <div class={style.codeContainer}>
-        <div class={style.codeText}>{children}</div>
+        <div class={style.codeText}>
+
+        </div>
         <button onClick={copyToClipboard} class={style.copyButton}>
           📋
         </button>

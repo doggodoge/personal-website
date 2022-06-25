@@ -1,21 +1,14 @@
 import { Component, createSignal } from 'solid-js'
 import styles from './App.module.css'
-import { CodeBlock, Social } from './components'
-// import TestBlogPost from './posts/test-blog-post.mdx'
+import { BlogPost, CodeBlock, Social } from './components'
 
-const Counter: Component = () => {
-  const [count, setCount] = createSignal(0)
+const blogPostTestContent = `
+# This is some Test Content
 
-  const handleCount = () => {
-    setCount(count() + 1)
-  }
-
-  return (
-    <button class={styles.counterButton} onClick={handleCount}>
-      Count: {count()}
-    </button>
-  )
-}
+\`\`\`js
+const addTwo = (x, y) => console.log(x + y)
+\`\`\`
+`.trim()
 
 const Header: Component = () => {
   return (
@@ -32,22 +25,8 @@ const App: Component = () => {
       <Header />
       <h2>Placeholder, stuff to come!</h2>
       <p>I will eventually put something here. I swear!</p>
-      <p>For now play with this <em>counter</em>:</p>
-      <div
-        style={{
-          display: 'flex',
-          'flex-direction': 'column',
-          'align-items': 'center',
-          gap: '1em',
-        }}
-      >
-        <Counter />
 
-        <h2>Code Block Test</h2>
-        <CodeBlock>
-          {"// this is a comment\nconsole.log('Hi!')\n\n/* Just a Simple Code Block Test */"}
-        </CodeBlock>
-      </div>
+      <BlogPost content={blogPostTestContent} />
     </div>
   )
 }
