@@ -1,4 +1,4 @@
-import { Component, For } from 'solid-js'
+import { Component, For, JSX } from 'solid-js'
 import SolidMarkdown from 'solid-markdown'
 import { CodeBlock } from '../index'
 
