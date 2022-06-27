@@ -1,6 +1,7 @@
 import { Component, For, JSX } from 'solid-js'
 import SolidMarkdown from 'solid-markdown'
-import { CodeBlock } from '../index'
+import { BlockQuote, CodeBlock } from '../index'
+import style from './BlogPost.module.css'
 
 interface BlogPostMetadata {
   author: string
@@ -15,13 +16,12 @@ const BlogPostHeader: Component<BlogPostMetadata> = ({
 }) => {
   return (
     <div>
-      <div>
+      <div class={style.authorAndDateContainer}>
         <div>{author}</div>
+        <div>/</div>
         <div>{publishedDate.toDateString()}</div>
       </div>
-      <For each={tags} fallback={<div>No tags.</div>}>
-        {item => <div>{item}</div>}
-      </For>
+      <For each={tags}>{item => <div>{item}</div>}</For>
     </div>
   )
 }
@@ -33,6 +33,8 @@ interface BlogPostProps {
 
 const BlogPost: Component<BlogPostProps> = ({ metadata, content }) => {
   const customMarkdownElements = {
+    h1: ({ children }) => <h2 class={style.title}>{children}</h2>,
+    blockquote: ({ children }) => <BlockQuote>{children}</BlockQuote>,
     code({ inline, children }) {
       return inline ? (
         <code>{children}</code>
@@ -43,7 +45,7 @@ const BlogPost: Component<BlogPostProps> = ({ metadata, content }) => {
   }
 
   return (
-    <article>
+    <article class={style.container}>
       <BlogPostHeader
         author="Gary Moore"
         publishedDate={new Date(Date.now())}

@@ -3,26 +3,21 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 1em;
 }
 
-.counterButton {
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: var(--font-variation-body);
-  padding: 1rem;
-  font-size: 1.2rem;
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 60em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 1em;
   color: white;
-  background-color: green;
-  border-style: none;
-  border-radius: 0.5em;
-  box-shadow: 0.2rem 0.2rem 0 darkgreen;
-  transition: 100ms;
-}
-
-.counterButton:hover {
-  transform: scale(1.1);
-  font-variation-settings: var(--font-variation-heading);
-}
-
-.counterButton:active {
-  transform: translateY(0.2em);
+  background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+  box-shadow: 0.2em 0.2em 0 hsla(208, 33%, 21%, 1);
 }

@@ -27,9 +27,7 @@ const CodeBlock: Component<CodeBlockProps> = ({ children }: CodeBlockProps) => {
   return (
     <div class={style.container}>
       <div class={style.codeContainer}>
-        <div class={style.codeText}>
-
-        </div>
+        <div class={style.codeText}>{children}</div>
         <button onClick={copyToClipboard} class={style.copyButton}>
           📋
         </button>
@@ -40,7 +38,11 @@ const CodeBlock: Component<CodeBlockProps> = ({ children }: CodeBlockProps) => {
         enterActiveClass={style.fadeEnterActive}
         exitActiveClass={style.fadeExitActive}
       >
-        {showTooltip() && <ToolTip>Copied</ToolTip>}
+        {showTooltip() && (
+          <div class={style.tooltip}>
+            <ToolTip>Copied</ToolTip>
+          </div>
+        )}
       </Transition>
     </div>
   )
