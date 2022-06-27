@@ -1,0 +1,19 @@
+.container {
+    text-align: left;
+    padding: 5em 1em 0 1em;
+}
+
+.authorAndDateContainer {
+    display: flex;
+    font-size: small;
+    font-variation-settings: var(--font-variation-monospace);
+}
+
+.title {
+    font-size: xx-large;
+    word-wrap: break-word;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+}

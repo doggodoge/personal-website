@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  align-items: center;
 }
 
 .codeContainer {
@@ -14,8 +13,8 @@
   border-style: none;
   border-radius: 1em;
   color: white;
-  background-color: tomato;
-  box-shadow: 0.2em 0.2em 0 rgb(184, 70, 50);
+  background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+  box-shadow: 0.2em 0.2em 0 hsla(208, 33%, 21%, 1);
 }
 
 .codeText {
@@ -30,11 +29,17 @@
   background-color: transparent;
   border-style: none;
   border-radius: 0.3em;
+  height: fit-content;
   transition: 100ms;
 }
 
 .copyButton:hover {
-  background-color: rgb(184, 70, 50);
+  background-color: hsla(208, 33%, 21%, 1);
+}
+
+.tooltip {
+  align-self: center;
+  width: fit-content;
 }
 
 .fadeEnterActive,

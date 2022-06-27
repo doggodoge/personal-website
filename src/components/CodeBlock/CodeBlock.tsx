@@ -38,7 +38,11 @@ const CodeBlock: Component<CodeBlockProps> = ({ children }: CodeBlockProps) => {
         enterActiveClass={style.fadeEnterActive}
         exitActiveClass={style.fadeExitActive}
       >
-        {showTooltip() && <ToolTip>Copied</ToolTip>}
+        {showTooltip() && (
+          <div class={style.tooltip}>
+            <ToolTip>Copied</ToolTip>
+          </div>
+        )}
       </Transition>
     </div>
   )

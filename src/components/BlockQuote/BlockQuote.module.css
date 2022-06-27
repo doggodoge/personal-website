@@ -1,0 +1,8 @@
+.container {
+    font-style: italic;
+    padding: 0.1em 0.1em 0.1em 1em;
+    border-style: solid;
+    border-radius: 0.5em;
+    border-width: 0 0 0 0.5em;
+    border-color: #3A3042;
+}
