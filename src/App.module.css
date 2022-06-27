@@ -2,22 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding: 1em;
 }
 
 .contentContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 60em;
+  max-width: 50em;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: calc(100% - 5em);
   padding: 2em;
-  border-radius: 1em;
   color: white;
+  border-radius: 1em;
   background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
   box-shadow: 0.2em 0.2em 0 hsla(208, 33%, 21%, 1);
 }
