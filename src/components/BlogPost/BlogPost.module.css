@@ -4,7 +4,6 @@
 }
 
 .authorAndDateContainer {
-    display: flex;
     font-size: small;
     font-variation-settings: var(--font-variation-monospace);
 }

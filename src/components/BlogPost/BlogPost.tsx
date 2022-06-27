@@ -1,7 +1,8 @@
-import { Component, For, JSX } from 'solid-js'
+import { Component, For } from 'solid-js'
 import SolidMarkdown from 'solid-markdown'
 import { BlockQuote, CodeBlock } from '../index'
 import style from './BlogPost.module.css'
+import { NormalComponents } from 'solid-markdown/dist/complex-types'
 
 interface BlogPostMetadata {
   author: string
@@ -32,25 +33,27 @@ interface BlogPostProps {
 }
 
 const BlogPost: Component<BlogPostProps> = ({ metadata, content }) => {
-  const customMarkdownElements = {
-    h1: ({ children }) => <h2 class={style.title}>{children}</h2>,
-    blockquote: ({ children }) => <BlockQuote>{children}</BlockQuote>,
-    code({ inline, children }) {
-      return inline ? (
-        <code>{children}</code>
-      ) : (
-        <CodeBlock>{children}</CodeBlock>
-      )
-    },
-  }
-
   return (
     <article class={style.container}>
-      <BlogPostHeader
-        author="Gary Moore"
-        publishedDate={new Date(Date.now())}
-      />
-      <SolidMarkdown components={customMarkdownElements}>
+      {metadata && (
+        <BlogPostHeader
+          author={metadata.author}
+          publishedDate={metadata.publishedDate}
+        />
+      )}
+      <SolidMarkdown
+        components={{
+          h1: ({ children }) => <h2 class={style.title}>{children}</h2>,
+          blockquote: ({ children }) => <BlockQuote>{children}</BlockQuote>,
+          code({ inline, children }) {
+            return inline ? (
+              <code>{children}</code>
+            ) : (
+              <CodeBlock>{children}</CodeBlock>
+            )
+          },
+        }}
+      >
         {content}
       </SolidMarkdown>
     </article>
