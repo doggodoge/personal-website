@@ -12,7 +12,7 @@ spec:
       labels:
         app: personal-website
     spec:
-      conatiners:
+      containers:
         - name: personal-website-container
           image: madmangaz/personal-website-container:latest
           ports:
