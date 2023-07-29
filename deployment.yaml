@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: personal-website
 spec:
-  replicas: 1,
+  replicas: 1
   selector:
     matchLabels:
       app: personal-website
@@ -16,4 +16,4 @@ spec:
         - name: personal-website-container
           image: madmangaz/personal-website-container:latest
           ports:
-            - conatinerPort: 80
+            - containerPort: 80
