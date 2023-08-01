@@ -42,7 +42,7 @@ spec:
   - hosts:
     - garymoore.ie
     - www.garymoore.ie
-    secretName: website-tls
+    secretName: personal-website-tls
   rules:
   - host: garymoore.ie
     http:
