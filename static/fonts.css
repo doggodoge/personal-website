@@ -1,0 +1,31 @@
+/* Regular Anonymous Pro */
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('/AnonymousPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold Anonymous Pro */
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('/AnonymousPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic Anonymous Pro */
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('/AnonymousPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold-Italic Anonymous Pro */
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('/AnonymousPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
