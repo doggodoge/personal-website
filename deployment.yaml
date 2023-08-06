@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: personal-website-container
-        image: madmangaz/personal-website-container:latest # Replace with your actual image name
+        image: madmangaz/personal-website-container:site-2 # Replace with your actual image name
         ports:
         - containerPort: 80 # Expose the port your application listens on
 
