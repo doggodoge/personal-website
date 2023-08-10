@@ -4,11 +4,11 @@
 
 <main>
   <h1>Gary Moore's Personal Website</h1>
-  <span>
+  <div>
     <FunkyEmoji emoji="🏗️" size="5rem" />
     <FunkyEmoji emoji="👷" size="5rem" />
     <FunkyEmoji emoji="🚧" size="5rem" />
-  </span>
+  </div>
   <p><em>Under Construction</em>.</p>
 </main>
 
@@ -16,6 +16,5 @@
   main {
     justify-content: center;
     text-align: center;
-    padding: 1em;
   }
 </style>
