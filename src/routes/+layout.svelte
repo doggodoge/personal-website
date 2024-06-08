@@ -7,6 +7,7 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/parades">Parades</a>
+    <a href="https://donegal.garymoore.ie/">Donegal</a>
   </nav>
   <div class="content">
     <slot></slot>
