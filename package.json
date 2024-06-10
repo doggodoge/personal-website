@@ -19,7 +19,7 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"@types/mapbox-gl": "^2.7.13",
+		"@types/mapbox-gl": "^3.1.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
@@ -36,6 +36,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mapbox-gl": "^3.0.1"
+		"mapbox-gl": "^3.4.0"
 	}
 }
